@@ -1,3 +1,4 @@
-The purpose of this Docker image is to install cloudinit onto the phusion base 
-image and configure it to start at boot. These images are intended to be used as 
-lightweight vms using the nova-docker driver.
+
+Applies configuration from 
+[Ansible-Docker-Base](https://github.com/ansible/ansible-docker-base) to 
+[Phusion-Base-Image](https://github.com/phusion/baseimage-docker.git).
