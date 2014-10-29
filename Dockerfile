@@ -16,7 +16,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/* /var/cache/apt/*
 
 RUN curl -s https://bootstrap.pypa.io/get-pip.py | python -
-
 RUN pip install ansible
 
-RUN mkdir -p /etc/ansible && echo '[local]\nlocalhost\n' > /etc/ansible/hosts
+RUN mkdir -p /etc/ansible && \
+    echo '[local]\nlocalhost ansible_connection=local\n' > /etc/ansible/hosts
