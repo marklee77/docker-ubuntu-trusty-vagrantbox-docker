@@ -1,4 +1,16 @@
+docker-baseimage-python
+=======================
 
-Applies configuration from 
-[Ansible-Docker-Base](https://github.com/ansible/ansible-docker-base) to 
-[Phusion-Base-Image](https://github.com/phusion/baseimage-docker.git).
+The purpose of this docker image is to provide an environment with ssh and
+python, suitable for use in the development of ansible playbooks and roles with
+vagrant.
+
+License
+-------
+
+GPLv2
+
+Author Information
+------------------
+
+http://stillwell.me
