@@ -17,3 +17,5 @@ RUN pip install docker-py
 RUN mkdir -p /etc/my_init.d && \
     echo '#!/bin/sh\nservice docker start\n' > /etc/my_init.d/10-docker && \
     chmod 0755 /etc/my_init.d/10-docker
+
+VOLUME /var/lib/docker
