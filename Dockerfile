@@ -11,6 +11,9 @@ RUN apt-get update && \
     apt-get -y install lxc-docker && \
     rm -rf /var/lib/apt/lists/* /var/cache/apt/*
 
+RUN curl -s https://bootstrap.pypa.io/get-pip.py | python -
+RUN pip install docker-py
+
 RUN mkdir -p /etc/my_init.d && \
     echo '#!/bin/sh\nservice docker start\n' > /etc/my_init.d/10-docker && \
     chmod 0755 /etc/my_init.d/10-docker
