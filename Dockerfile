@@ -1,4 +1,4 @@
-FROM marklee77/baseimage-python:latest
+FROM marklee77/ubuntu-trusty-vagrantbox:latest
 MAINTAINER Mark Stillwell <mark@stillwell.me>
 
 ENV DEBIAN_FRONTEND noninteractive
