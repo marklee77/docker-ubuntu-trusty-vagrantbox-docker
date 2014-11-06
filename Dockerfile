@@ -18,4 +18,6 @@ RUN mkdir -p /etc/my_init.d && \
     echo '#!/bin/sh\nservice docker start\n' > /etc/my_init.d/10-docker && \
     chmod 0755 /etc/my_init.d/10-docker
 
+RUN usermod -aG docker vagrant
+
 VOLUME /var/lib/docker
